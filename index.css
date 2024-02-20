@@ -424,8 +424,7 @@ button {
         margin: 0.8rem 8rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-column-gap: 3rem;
-        
+        grid-column-gap: 5rem;
     }
 
 
