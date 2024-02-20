@@ -15,7 +15,7 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="index.css">
   <title>E-commerce product page</title>
-  <script src="./navigation.js" defer></script>
+  <script src="./index.js" defer></script>
   
 </head>
 <body>
@@ -41,26 +41,44 @@
 
   <main>
 
-    <img class="no-margin" src="./images/image-product-1.jpg">
+    <picture>
+      <img src="./images/image-product-1.jpg">
+    </picture>
 
-    <h1 class="text-orange uppercase fs-200 fw-600 letter-spacing-3">Sneaker Company</h1>
-    
-    <h2 class="text-black fw-700 fs-700">Fall Limited Edition Sneakers</h2>
-    
-    <p>These low-profile sneakers are your perfect casual wear companion. Featuring a
-    durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
-    
-    <div class="price">
-      <h2 class="text-black fw-700 fs-700">$125.00</h2>
-      <h3>50%</h3>
-      <h4>$250.00</h4>
-    </div>
-    
-    <button>0</button>
-    <Button>Add to cart</Button>
+    <article>
+
+      <header class="text-orange uppercase fs-100 fw-600 letter-spacing-3 bottom-1">Sneaker Company</header>
+      <h1 class="text-black fw-700 fs-700 bottom-2">Fall Limited Edition <br>Sneakers</br></h1>
+        <p class="bottom-2">These low-profile sneakers are your perfect casual wear companion. Featuring a
+          durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+
+            <div class="price flex bottom-2">
+              <h2 class="text-black fw-700 fs-700 p-new">$125.00</h2>
+              <span class="bg-orange text-orange fw-600 discount flex">50%</span>
+              <span class="overline fw-500 p-original">$250.00</span>
+              </div>
+
+              <div class="b-counter bg-gray bottom-1 flex">
+                <h1 class="counter-display centered">.</h1>
+                <button class="counter-minus ">
+                  <img src="./images/icon-minus.svg">
+                </button>
+                <button class="counter-plus">
+                  <img src="./images/icon-plus.svg">
+                </button>
+              </div>
+
+              <div class="b-cart bg-dark-orange">
+                <button class="text-white flex centered">
+                  <img src="./images/icon-cart.svg" class="white-icon">
+                  Add to cart
+                </button>
+              </div>
+              
+    </article>
 
   </main>
-  
+
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Daniela Bazán</a>.
