@@ -41,9 +41,45 @@
 
   <main>
 
-    <picture>
-      <img src="./images/image-product-1.jpg">
-    </picture>
+    <div class="products grid">
+
+      <div class="main-product bottom-2">
+        <picture>
+          <img src="./images/image-product-1.jpg" class="main-img">
+        </picture>
+      </div>
+
+      <div class="product-images">
+        <img src="./images/image-product-1-thumbnail.jpg" class="thumbnail">
+        <img src="./images/image-product-2-thumbnail.jpg" class="thumbnail">
+        <img src="./images/image-product-3-thumbnail.jpg" class="thumbnail">
+        <img src="./images/image-product-4-thumbnail.jpg" class="thumbnail">
+      </div>
+    </div>
+
+    <div class="view">
+      <div class="products grid gallery centered">
+      
+        <div class="main-product bottom-2">
+          <button class="previous">
+            <img src="./images/icon-previous.svg" class="centered">
+          </button>
+          <button class="next">
+            <img src="./images/icon-next.svg" class="centered">
+          </button>
+          <picture>
+            <img src="./images/image-product-1.jpg" class="main-img">
+          </picture>
+        </div>
+      
+        <div class="product-images thumbnail-gallery">
+          <img src="./images/image-product-1-thumbnail.jpg" class="thumbnail">
+          <img src="./images/image-product-2-thumbnail.jpg" class="thumbnail">
+          <img src="./images/image-product-3-thumbnail.jpg" class="thumbnail">
+          <img src="./images/image-product-4-thumbnail.jpg" class="thumbnail">
+        </div>
+      </div>
+    </div>
 
     <article>
 
@@ -58,6 +94,7 @@
               <span class="overline fw-500 p-original">$250.00</span>
               </div>
 
+              <div class="counter-cart">
               <div class="b-counter bg-gray bottom-1 flex">
                 <h1 class="counter-display centered">.</h1>
                 <button class="counter-minus ">
@@ -69,10 +106,11 @@
               </div>
 
               <div class="b-cart bg-dark-orange">
-                <button class="text-white flex centered">
+                <button class=" b-cart text-white flex centered">
                   <img src="./images/icon-cart.svg" class="white-icon">
                   Add to cart
                 </button>
+              </div>
               </div>
               
     </article>

@@ -37,3 +37,26 @@ counterMinusElem.addEventListener("click",()=>{
 function updateDisplay(){
     counterDisplayElem.innerHTML = count;
 };
+
+//product images 
+
+  const thumbnails = document.querySelectorAll('.thumbnail');
+  const view = document.querySelector('.view');
+
+  thumbnails.forEach(thumbnail => {
+    thumbnail.addEventListener('click', () => {
+      view.style.display = 'block';
+    });
+  });
+
+  const mainImage = document.querySelectorAll('.main-img');
+  
+  mainImage.forEach(mainImage => {
+    mainImage.addEventListener('click', () => {
+        view.style.display = 'block';
+    });
+  });
+
+  //
+  
+  

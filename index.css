@@ -57,10 +57,10 @@
     :root {
         /* font-sizes desktop*/
         --fs-800: 6.25rem;
-        --fs-700: 3.5rem;
+        --fs-700: 2.5rem;
         --fs-600: 2rem;
         --fs-500: 1.75rem;
-        --fs-400: 1.125rem;
+        --fs-400: 1rem;
     }
 }
 
@@ -312,6 +312,10 @@ select {
         height: 1.5rem;
     }
 
+    .product-images {
+        display: none;
+    }
+
 }
 
 /* Media query for desktop */
@@ -375,28 +379,31 @@ button {
 
 .b-counter,
 .b-cart {
+    cursor: pointer;
     height: 3rem;
     width: 100%;
     border-radius: 10px;
     border: none;
     position: relative;
-   
+   justify-content: center;
 }
 
 .counter-minus{
+    cursor: pointer;
     position: absolute;
     top: 1.4rem;
     left: 1rem;
 }
 
 .counter-plus {
+    cursor: pointer;
     position: absolute;
     top: 1rem;
     right: 1rem;
 }
 
 .discount {
-    height: 1.5rem;
+    height: 1.8rem;
     width: 2.5rem;
     border-radius: 7px;
     justify-content: center;
@@ -421,12 +428,127 @@ button {
 @media (min-width: 45em) {
 
     main {
-        margin: 0.8rem 8rem;
+        margin: 5rem 8rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-column-gap: 5rem;
+        grid-column-gap: 0rem;
     }
 
+    article {
+        margin-top: 3rem;
+    }
 
+    .price {
+        margin-bottom: 3rem;
+    }
+
+   .p-original {
+       position: absolute;
+       top: 3rem;
+       left: 0.5rem;
+   }
+
+    .counter-cart {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        gap: 1.5rem;
+    }
+
+    .b-counter {
+        width: 35%;
+    }
+
+    .b-cart {
+        width: 65%;
+    }
+
+    .products {
+        width: 70%;
+        grid-template-columns: 1fr;
+        margin-left: 3rem;
+    }
+
+    .main-product {
+        grid-row: 1;
+        display: center;
+    }
+
+    .main-img {
+        border-radius: 0.5rem;
+    }
+
+    .product-images {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1.5rem;
+    }
+
+    .thumbnail {
+        width: 5.5rem;
+        border-radius: 0.5rem;
+    }
 
 }
+
+/* products view*/
+
+.view {
+    display: none;
+}
+
+/* Media query for desktop */
+@media (min-width: 45em) {
+
+    .view {
+        position: fixed; 
+        z-index: 9999; 
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto; 
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .gallery {
+        width: 35%;
+        height: 40%;
+        top: 32%;
+
+    }
+
+    .thumbnail-gallery{
+        display: flex;
+        justify-self: center;
+    }
+
+    .previous,
+    .next {
+        background-color: white;
+        border-radius: 50%;
+        aspect-ratio: 1;
+        width: 3rem;
+        height: 3rem;
+        position: fixed;
+    }
+
+    .previous {
+        cursor: pointer;
+        position: absolute;
+        top: 14rem;
+        left: -1rem; 
+        
+    }
+
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 14rem;
+        right: -1rem; 
+    }
+
+}
+
+
+
