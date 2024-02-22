@@ -424,6 +424,28 @@ button {
     right: 1rem;
 }
 
+.previous-mob,
+.next-mob {
+    background-color: white;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+}
+
+.previous-mob {
+    position: absolute;
+    top: 16rem;
+    left: 1rem;
+}
+
+.next-mob {
+    position: absolute;
+    top: 16rem;
+    right: 1rem;
+}
+
 /* Media query for desktop */
 @media (min-width: 45em) {
 
@@ -471,7 +493,8 @@ button {
 
     .main-product {
         grid-row: 1;
-        display: center;
+        justify-content: center;
+        align-items: center;
     }
 
     .main-img {
@@ -489,13 +512,20 @@ button {
         border-radius: 0.5rem;
     }
 
+    .previous-mob,
+    .next-mob {
+        display: none;
+    }
+
 }
 
-/* products view*/
+/* products gallery view*/
 
 .view {
     display: none;
 }
+
+
 
 /* Media query for desktop */
 @media (min-width: 45em) {
@@ -546,6 +576,13 @@ button {
         position: absolute;
         top: 14rem;
         right: -1rem; 
+    }
+
+    .close {
+        cursor: pointer;
+        position: absolute;
+        top: -2rem;
+        right: 0rem;
     }
 
 }
