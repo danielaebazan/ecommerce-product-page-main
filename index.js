@@ -19,6 +19,7 @@ navToggle.addEventListener("click", () => {
 let counterDisplayElem = document.querySelector('.counter-display');
 let counterMinusElem = document.querySelector('.counter-minus');
 let counterPlusElem = document.querySelector('.counter-plus');
+let productCounterElem = document.querySelector('.product-counter');
 
 let count = 0;
 
@@ -37,6 +38,34 @@ counterMinusElem.addEventListener("click",()=>{
 function updateDisplay(){
     counterDisplayElem.innerHTML = count;
 };
+
+// nav - product counter on cart 
+document.addEventListener("DOMContentLoaded", function() {
+    let productCounterElem = document.querySelector('.product-counter');
+    let addCartBtn = document.querySelector('.b-cart');
+
+    addCartBtn.addEventListener('click', () => {
+     if (count == 0) {
+      hideProductCounter();
+      } else {
+      updateProductCounter();
+      }
+    })
+  
+    function updateProductCounter() {
+      showProductCounter();
+      productCounterElem.innerHTML = count;
+    };
+
+    function showProductCounter() {
+      productCounterElem.style.display = 'flex';
+    }
+
+    function hideProductCounter() {
+      productCounterElem.style.display = 'none';
+    }
+
+});
 
 //Open the product gallery view only on desktop
 
