@@ -334,6 +334,62 @@ button {
         display: none;
     }
 
+        .cart-view {
+            position: absolute;
+            z-index: 10000;
+            width: 21rem;
+            height: 15rem;
+            background-color: white;
+            border-radius: 0.5rem;
+            right: 0rem;
+            top: 6rem;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2), 0px -5px 10px rgba(0, 0, 0, 0);
+            display: none;
+        }
+    
+        .cart-img {
+            width: 3.5rem;
+            height: 3.5rem;
+            position: absolute;
+            top: 5rem;
+            left: 1rem;
+        }
+    
+        .icon-delete {
+            width: 1rem;
+            height: 1rem;
+            position: absolute;
+            top: 6rem;
+            right: 1rem;
+        }
+    
+        .cart-text {
+            top: 5rem;
+            width: max-content;
+            height: 4rem;
+            position: absolute;
+            left: 5rem;
+        }
+    
+        .total {
+            gap: 0rem;
+        }
+    
+        .cart-name {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+        }
+    
+        .checkout {
+            position: absolute;
+            bottom: 1.4rem;
+            width: 90%;
+            height: 1.7rem;
+            margin: 0 1rem;
+            border-radius: 0.5rem;
+        }
+
 }
 
 /* Media query for desktop */
@@ -407,6 +463,49 @@ button {
     top: 4rem;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2), 0px -5px 10px rgba(0, 0, 0, 0);
     display: none;
+}
+
+.cart-img {
+    width: 3.5rem;
+    height: 3.5rem;
+    position: absolute;
+    top: 5rem;
+    left: 1rem;
+}
+
+.icon-delete {
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    top: 6rem;
+    right: 1rem;
+}
+
+.cart-text {
+    top: 5rem;
+    width: max-content;
+    height: 4rem;
+    position: absolute;
+    left: 5rem;
+}
+
+.total {
+    gap: 0rem;
+}
+
+.cart-name {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+.checkout {
+    position: absolute;
+    bottom: 1.4rem;
+    width: 90%;
+    height: 1.7rem;
+    margin: 0 1rem;
+    border-radius: 0.5rem;
 }
 
 }
@@ -568,49 +667,6 @@ button {
 
 .view {
     display: none;
-}
-
-.cart-img {
-    width: 3.5rem;
-    height: 3.5rem;
-    position: absolute;
-    top: 5rem;
-    left: 1rem;
-}
-
-.icon-delete {
-    width: 1rem;
-    height: 1rem;
-    position: absolute;
-    top: 6rem;
-    right: 1rem;
-}
-
-.cart-text {
-        top: 5rem;
-        width: max-content;
-        height: 4rem;
-        position: absolute;
-        left: 5rem;
-}
-
-.total {
-    gap: 0rem;
-}
-
-.cart-name {
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-}
-
-.checkout {
-    position: absolute;
-    bottom: 1.4rem;
-    width: 90%;
-    height: 1.7rem;
-    margin: 0 1rem;
-    border-radius: 0.5rem;
 }
 
 
