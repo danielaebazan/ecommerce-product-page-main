@@ -269,11 +269,13 @@ button {
         flex-direction: column;
         transform: translateX(-100%);
         transition: transform 500ms ease-in-out;
+        background-color: transparent;
     }
 
     .primary-navigation[data-visible="true"] {
         transform: translateX(0);
     }
+    
 
     .mobile-nav-toggle {
         cursor: pointer;
