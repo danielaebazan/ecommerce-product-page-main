@@ -402,7 +402,11 @@ button {
     width: auto;
     height: auto;
     margin: 1rem 8rem;
+    padding-bottom: 1rem;
+    border-bottom: solid 0.2px lightgray;
 }
+
+
 
 .primary-navigation {
     --gap: clamp(.7rem, 3vw, 1.5rem);
