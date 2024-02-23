@@ -168,3 +168,44 @@ document.addEventListener("DOMContentLoaded", function() {
       mainImage.setAttribute('src', imagePath);
     }
   });
+
+  // cart 
+
+document.addEventListener("DOMContentLoaded", function() {
+    let cartBtn = document.querySelector('.product-cart');
+    let cartView = document.querySelector('.cart-view');
+
+    function toggleCartView() {
+        if (cartView.style.display === 'none' || cartView.style.display === '') {
+            cartView.style.display = 'flex';
+        } else {
+            cartView.style.display = 'none';
+        }
+    }
+
+    cartBtn.addEventListener('click', toggleCartView);
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    let counterDisplayElem = document.querySelector('.counter-display');
+    let numberItemsElem = document.querySelector('.number-items');
+    let totalElem = document.querySelector('.total');
+    let pricePerItem = parseFloat(document.querySelector('.p-new').textContent.trim().substring(1)); 
+   
+    function updateCartView() {
+        let itemCount = parseInt(counterDisplayElem.textContent); 
+        let total = itemCount * pricePerItem; 
+     
+        numberItemsElem.textContent = `$${pricePerItem.toFixed(2)} x ${itemCount} = $${total.toFixed(2)}`; 
+    }
+
+    updateCartView();
+
+    setInterval(updateCartView, 1000); 
+});
+
+
+
+
+
